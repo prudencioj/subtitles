@@ -20,7 +20,7 @@ func main() {
 	flag.StringVar(&langVar, "l", "en", "list of languages")
 	flag.Parse()
 
-	src := "/Users/joaoprudencio/Downloads" //srcVar
+	src := srcVar
 	langs := strings.Split(langVar, ",")
 
 	s := subs.NewDownloader()
